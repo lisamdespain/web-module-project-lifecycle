@@ -6,6 +6,8 @@ export default class Form extends React.Component {
   }
 
   handleChange = (e) =>{
+
+    
     this.setState({
       inputValue:e.target.value
     })
@@ -13,6 +15,7 @@ export default class Form extends React.Component {
 
   handleSubmit = (e) =>{
     e.preventDefault();
+    console.log('submit event', this.state.inputValue)
     this.props.addTask(e, this.state.inputValue);
     this.setState({
       inputValue: ''

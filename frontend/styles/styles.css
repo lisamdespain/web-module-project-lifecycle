@@ -83,3 +83,10 @@ ul, form {
 .todo:hover {
   cursor: pointer;
 }
+
+.completed{
+  display:flex;
+}
+.completed::after{
+  content: '✔';
+}
